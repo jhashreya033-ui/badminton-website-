@@ -3,85 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Badminton World</title>
+  <meta name="description" content="Badminton Website brings training tips, tournament highlights, player stories, and community updates for badminton fans.">
+  <title>Badminton Website | Train. Compete. Follow the Game.</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Badminton World</div>
-    <nav>
-      <a href="#">Home</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Badminton Website home">
+      <span class="brand-mark">BW</span>
+      <span>Badminton Website</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#training">Training</a>
       <a href="#players">Players</a>
-      <a href="#tournaments">Tournaments</a>
+      <a href="#events">Events</a>
       <a href="#news">News</a>
-      <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-action" href="#join">Join</a>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to the World of Badminton</h1>
-      <p>Latest badminton news, rankings, match analysis, and stories from around the globe.</p>
-      <button>Explore Now</button>
-    </div>
-  </section>
-
-  <section id="players" class="players">
-    <h2>Top Badminton Players</h2>
-    <div class="player-container">
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PV_Sindhu.jpg" alt="PV Sindhu">
-        <h3>PV Sindhu</h3>
-        <p>Olympic medalist and one of India's greatest badminton players.</p>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Badminton insights, training, and match culture</p>
+        <h1>Follow the fastest racket sport with a sharper court-side view.</h1>
+        <p class="hero-copy">Badminton Website brings professional training notes, global tournament highlights, player profiles, and fresh stories for fans and athletes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#training">Start Training</a>
+          <a class="button secondary" href="#news">Read Updates</a>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Viktor_Axelsen.jpg" alt="Viktor Axelsen">
-        <h3>Viktor Axelsen</h3>
-        <p>Olympic champion known for dominance in men's singles.</p>
+      <div class="hero-panel" aria-label="Featured badminton highlights">
+        <div>
+          <span class="stat">320 km/h</span>
+          <span class="label">elite smash speed</span>
+        </div>
+        <div>
+          <span class="stat">5</span>
+          <span class="label">core training zones</span>
+        </div>
+        <div>
+          <span class="stat">24/7</span>
+          <span class="label">badminton coverage</span>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Satwik_Chirag.jpg" alt="Satwik and Chirag">
-        <h3>Satwik &amp; Chirag</h3>
-        <p>India's top doubles pair making history internationally.</p>
+    </section>
+
+    <section id="training" class="section training-section">
+      <div class="section-heading">
+        <p class="eyebrow">Training Lab</p>
+        <h2>Build a complete game, one session at a time.</h2>
       </div>
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Huang_Yaqiong.jpg" alt="Huang Ya Qiong">
-        <h3>Huang Ya Qiong</h3>
-        <p>World-class mixed doubles player from China.</p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>Footwork and recovery</h3>
+          <p>Fast split steps, balanced lunges, and recovery patterns for every corner of the court.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>Shot quality</h3>
+          <p>Improve clears, drops, net control, drives, and smashes with focused technical cues.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>Match strategy</h3>
+          <p>Learn when to lift, when to press, and how to create openings against different styles.</p>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="tournaments" class="tournaments">
-    <h2>Major Tournaments</h2>
-    <div class="tournament-box">
-      <h3>All England Open</h3>
-      <p>One of the oldest and most prestigious badminton tournaments.</p>
-    </div>
-    <div class="tournament-box">
-      <h3>BWF World Championships</h3>
-      <p>The biggest world championship event in badminton.</p>
-    </div>
-    <div class="tournament-box">
-      <h3>Thomas &amp; Uber Cup</h3>
-      <p>International team championships featuring top nations.</p>
-    </div>
-  </section>
+    <section id="players" class="section players-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Player Watch</p>
+        <h2>Names shaping the modern game.</h2>
+      </div>
+      <div class="player-grid">
+        <article class="player-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PV_Sindhu.jpg" alt="PV Sindhu on court">
+          <div>
+            <h3>PV Sindhu</h3>
+            <p>Olympic medalist with elite attacking range and championship experience.</p>
+          </div>
+        </article>
+        <article class="player-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Viktor_Axelsen.jpg" alt="Viktor Axelsen competing">
+          <div>
+            <h3>Viktor Axelsen</h3>
+            <p>Dominant singles player known for height, precision, and tactical control.</p>
+          </div>
+        </article>
+        <article class="player-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Satwik_Chirag.jpg" alt="Satwik and Chirag celebrating">
+          <div>
+            <h3>Satwik &amp; Chirag</h3>
+            <p>India's doubles leaders bringing power, speed, and fearless front-court pressure.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <section id="news" class="news">
-    <h2>Latest News</h2>
-    <div class="news-card">
-      <h3>PV Sindhu wins another international title</h3>
-      <p>Sindhu continues her comeback journey with impressive performances.</p>
-    </div>
-    <div class="news-card">
-      <h3>India rising in doubles badminton</h3>
-      <p>Indian doubles pairs are becoming strong medal contenders globally.</p>
-    </div>
-  </section>
+    <section id="events" class="section events-section">
+      <div class="events-copy">
+        <p class="eyebrow">Tournament Calendar</p>
+        <h2>Track the events every badminton fan should know.</h2>
+        <p>From heritage events to world championships, follow the competitions where rankings shift, rivalries grow, and new stars break through.</p>
+      </div>
+      <div class="event-list">
+        <article>
+          <span>Premier</span>
+          <h3>All England Open</h3>
+          <p>A historic stop known for prestige, packed arenas, and high-pressure matches.</p>
+        </article>
+        <article>
+          <span>World Title</span>
+          <h3>BWF World Championships</h3>
+          <p>The major individual championship where global titles are decided.</p>
+        </article>
+        <article>
+          <span>Team Play</span>
+          <h3>Thomas &amp; Uber Cup</h3>
+          <p>Country-vs-country intensity across men's and women's team events.</p>
+        </article>
+      </div>
+    </section>
 
-  <footer id="contact">
-    <p>&copy; 2026 Badminton World | Created by You</p>
+    <section id="news" class="section news-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Latest Stories</p>
+        <h2>Fresh angles from around the court.</h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <p class="tag">Performance</p>
+          <h3>How recovery routines separate strong third-game players</h3>
+          <p>Smart cooldowns, sleep, mobility, and nutrition help athletes stay explosive deeper into tournaments.</p>
+        </article>
+        <article class="news-card">
+          <p class="tag">Doubles</p>
+          <h3>Why front-court timing is changing modern doubles</h3>
+          <p>Better anticipation and tighter interceptions are making rallies shorter and more aggressive.</p>
+        </article>
+        <article class="news-card">
+          <p class="tag">Community</p>
+          <h3>Local clubs are where future champions begin</h3>
+          <p>Accessible coaching, friendly ladders, and consistent match play keep the sport growing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="join" class="join-section">
+      <div>
+        <p class="eyebrow">Join the rally</p>
+        <h2>Train smarter, watch closer, and stay connected to badminton.</h2>
+      </div>
+      <a class="button primary" href="mailto:hello@badmintonwebsite.com">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Badminton Website. All rights reserved.</p>
+    <a href="#home">Back to top</a>
   </footer>
 
   <script src="script.js"></script>
